@@ -13,8 +13,7 @@ import {
 } from '../controllers/eventController.js';
 import { protect, admin } from '../middleware/auth.js';
 import upload from '../middleware/upload.js';
-
-const router = express.Router();
+const router=express.Router();
 
 router.get('/featured', getFeaturedEvents);
 router.get('/upcoming', getUpcomingEvents);
